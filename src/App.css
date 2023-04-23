@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.flex-1 {
+    align-items: center;
+    justify-content: center;
+}
+.flex-2 {
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-align {
+    align-items: center;
+}
+.flex-justify {
+    justify-content: center;
+}
+.flex-dir {
+    flex-direction: column;
+}
+.grid {
+    display: grid;
+}
+.grid-1-cols {
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid-6-cols {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-10-cols {
+    grid-template-columns: repeat(10, 1fr);
+}
+.grid-12-cols {
+    grid-template-columns: repeat(12, 1fr);
+}
+.gap08 {
+    gap: 0.8rem;
+}
+.gap16 {
+    gap: 1.6rem;
+}
+.gap24 {
+    gap: 2.4rem;
+}
+.gap32 {
+    gap: 3.2rem;
+}
+.gap48 {
+    gap: 4.8rem;
+}
+.gap64 {
+    gap: 6.4rem;
+}
+.gap72 {
+    gap: 7.2rem;
+}
+.gap96 {
+    gap: 9.6rem;
+}
+.pad08 {
+    padding: 0.8rem;
+}
+.pad16 {
+    padding: 1.6rem;
+}
+.pad24 {
+    padding: 2.4rem;
+}
+.pad32 {
+    padding: 3.2rem;
+}
+.pad48 {
+    padding: 4.8rem;
+}
+.pad64 {
+    padding: 6.4rem;
+}
+.pad72 {
+    padding: 7.2rem;
+}
+.pad96 {
+    padding: 9.6rem;
+}
+
+
+.header-container{
+  height: 100vh;
+}
+
+.bookmark{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-bottom: 0.3rem solid #00BBF0;
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.commented-post{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+.all-post{
+  grid-column: 2/4;
+  grid-row: 1/3;
+  overflow: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.user-posts{
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-color: #D9FAFF;
+  overflow: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.mislaneous{
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-color: brown;
+}
+.navigation{
+  background-color: #00204A;
+}
+.primary-heading{
+  color: #fff;
+  font-size: 1.6rem;
+}
+.btn{
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #D9FAFF;
+}
+
+.post-details{
+  background-color: #D9FAFF;
+  border-radius: 0 1rem 1rem 0;
+  border-left: 0.5rem solid #00204A;
+}
+
+.title{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00204A;
+}
+.des,.des-comment{
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.des-comment{
+  font-size: 1.2rem;
+}
+.id{
+  opacity: 0;
+}
+.username,.username-comment{
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-bottom: 0.3rem solid #00204A;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.comment-container{
+  border: none;
+  border-radius: 0.5rem;
+}
+.comment-con{
+  background-color: #00204A;
+  border-radius: 0.5rem;
+  color: #D9FAFF;
+}
+
+.like,.comment,.add-comment,.update,.delete,.loginBtn,.closeLoginBtn{
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #00204A;
+  color: #D9FAFF;
+  cursor: pointer;
+}
+.update,.loginBtn,.closeLoginBtn{
+  background-color: #D9FAFF;
+  color: #00204A;
+}
+.delete{
+  box-shadow: inset 0 0 0 0.2rem #D9FAFF;
+}
+.view-all-comments{
+  padding-top: 1.6rem;
+  border-top: 0.1rem solid #000;
+}
+.bookmark-post{
+  background-color: #D9FAFF;
+  border-radius: 0.5rem;
+}
+.bookmark-username,.Commented-username,.post-title{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.bookmark-title{
+  font-size: 1.4;
+  line-height: 1.5;
+}
+.tertiary-heading{
+  font-size: 1.8rem;
+}
+
+.Allpost-content{
+  background-color: #00204A;
+  color: #D9FAFF;
+  border-radius: 0.5rem;
+}
+.post-des{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.post-identifier{
+  opacity: 0;
+}
+
+
+.header-container{
+  position: relative;
+}
+.login-container{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50% ,-50%);
+  background-color: #00204A;
+  border-radius: 1rem;
+}
+.label{
+  font-size: 1.4rem;
+  color: #D9FAFF;
+}
+.input{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+
+}
+.header-container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000098;
+}
+
+.hidden{
+  opacity: 0;
+  z-index: -5;
+}
